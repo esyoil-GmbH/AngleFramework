@@ -19,6 +19,6 @@
         "mikey179/vfsStream": "^1.6",
         "fig/http-message-util": "^1.1",
         "tracy/tracy": "^2.4",
-        "twig/twig": "^2.0"
+        "twig/twig": "1.38.4"
     }
 }
