@@ -15,12 +15,11 @@ class Engine {
     protected $tokens;
     private $stream;
 
-    public function __construct($viewsFolder = "views") {
+    public function __construct($viewsFolder = "templates") {
         $this->tokens = new Syntax($viewsFolder);
     }
 
     public function render($view, $params = []) {
-        $params["app_url"] = APP_URL;
         $params['engine'] = $this;
         if (!empty($params)) extract($params);
         $viewArray = explode('/', $view);
@@ -40,9 +39,13 @@ class Engine {
 
     private function localCompile($stream) {
         $this->setStream($stream);
-        foreach ($this->tokens->getTokens() as $token) {
-            $this->stream = ($token['callback']) ? preg_replace_callback($token['pattern'], $token['replacement'], $this->getStream()) : preg_replace($token['pattern'], $token['replacement'], $this->getStream());
-        }
+        $loader = new \Twig\Loader\FilesystemLoader('templates');
+        $twig = new \Twig\Environment($loader, [
+            //'cache' => 'template_cache',
+            'cache' => false
+        ]);
+
+        $this->stream = $twig->render('test.html', ['name' => 'Fabien']);
     }
 
     public function getStream() {
