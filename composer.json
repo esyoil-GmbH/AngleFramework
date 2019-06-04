@@ -1,7 +1,7 @@
 {
     "name": "esyoil-gmbh/esy-dashboard",
     "description": "A small & simple PHP Dashboard",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Bennet Gallein",
