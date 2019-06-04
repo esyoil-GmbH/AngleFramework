@@ -14,7 +14,7 @@ use Angle\Engine\Template\Engine;
 class Dashboard {
 
     public static function display(Engine $engine)  {
-        $a = $engine->render("templates/test.html");
+        $engine->render("templates/test.html", array("name" => "Bennet"));
     }
 
 }
