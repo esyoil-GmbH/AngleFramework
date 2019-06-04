@@ -1,11 +1,11 @@
 {
-    "name": "bennetgallein/angle-framework",
-    "description": "A PHP Framework for the Angle Network",
+    "name": "esyoil-gmbh/esy-dashboard",
+    "description": "A small & simple PHP Dashboard",
     "type": "project",
     "authors": [
         {
-            "name": "bennetgallein",
-            "email": "bennet@intranetproject.net"
+            "name": "Bennet Gallein",
+            "email": "bg@esyoil.com"
         }
     ],
     "autoload": {
