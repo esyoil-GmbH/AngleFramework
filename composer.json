@@ -1,11 +1,11 @@
 {
-    "name": "bennetgallein/angle-framework",
-    "description": "A PHP Framework for the Angle Network",
+    "name": "esyoil-gmbh/esy-dashboard",
+    "description": "A small & simple PHP Dashboard",
     "type": "project",
     "authors": [
         {
-            "name": "bennetgallein",
-            "email": "bennet@intranetproject.net"
+            "name": "Bennet Gallein",
+            "email": "bg@esyoil.com"
         }
     ],
     "autoload": {
@@ -18,7 +18,7 @@
         "php": ">=7.0",
         "mikey179/vfsStream": "^1.6",
         "fig/http-message-util": "^1.1",
-        "tracy/tracy": "^2.4"
+        "tracy/tracy": "^2.4",
+        "twig/twig": "^2.0"
     }
-
 }
